@@ -78,6 +78,25 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 
 <img width="990" alt="Screenshot 2023-02-01 at 11 14 13 AM" src="https://user-images.githubusercontent.com/43399466/215961440-3f13f82b-61a2-4117-88bc-0da265a67fa7.png">
 
+## Jenkins Architecture - Difference between Worker node as slave and docker container as slave
+
+![image](https://github.com/kohlidevops/Jenkins-Zero-To-Hero/assets/100069489/9029dab5-55b2-4bbb-9aad-3ceabbf56f6a)
+
+### Challenges with Worker node as Slave
+
+1. Need multiple machine act as a worker nodes
+2. If there is no requirements for any worker node, then it would be idle
+3. Not handling multiple versions in single machine - nodejs 8,9,12
+4. Cost would be painful
+
+### Advantages of using docker container as Slave
+
+1. No need separate VM means no idle machine
+2. Can use multiple docker container to resolve version problem
+3. Light weight process
+4. Container will be terminated once its completed the job
+5. This is the latest technology in CICD
+   
 ## Install the Docker Pipeline plugin in Jenkins:
 
    - Log in to Jenkins.
