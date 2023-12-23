@@ -159,6 +159,7 @@ sudo su -
 usermod -aG docker jenkins
 usermod -aG docker ubuntu
 systemctl restart docker
+sudo chmod 777 /var/run/docker.sock
 ```
 
 Once you are done with the above steps, it is better to restart Jenkins.
@@ -168,6 +169,17 @@ http://<ec2-instance-public-ip>:8080/restart
 ```
 
 The docker agent configuration is now successful.
+
+Switch to Jenkins user and run hello world container
+
+```
+su - jenkins
+docker run hello-world
+```
+This tell you that your installation appears to be working properly
+
+![image](https://github.com/kohlidevops/Jenkins-Zero-To-Hero/assets/100069489/7197a381-8fcc-42fb-8553-963cb80c15f4)
+
 
 
 
