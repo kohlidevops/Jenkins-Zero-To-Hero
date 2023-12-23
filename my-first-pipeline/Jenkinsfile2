@@ -1,6 +1,7 @@
 pipeline {
   agent {
-    docker { image 'node' }
+    //docker { image 'node' }
+    docker { image 'latticeekosz/node10' }
   }
   stages {
     stage('Ubuntu OS Version') {
