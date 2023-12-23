@@ -180,6 +180,14 @@ This tell you that your installation appears to be working properly
 
 ![image](https://github.com/kohlidevops/Jenkins-Zero-To-Hero/assets/100069489/7197a381-8fcc-42fb-8553-963cb80c15f4)
 
+## Create a new job with pipeline
+
+![image](https://github.com/kohlidevops/Jenkins-Zero-To-Hero/assets/100069489/5161a4fa-fd30-4bbb-8604-a0bf77e89865)
+
+![image](https://github.com/kohlidevops/Jenkins-Zero-To-Hero/assets/100069489/4031980e-6ec0-4bf3-80dc-c4b7b3d4eb3e)
+
+save and run the build
+
 
 
 
