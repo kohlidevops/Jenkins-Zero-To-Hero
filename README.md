@@ -196,6 +196,13 @@ You can play with mutiple version of any programming language
 
 ![image](https://github.com/kohlidevops/Jenkins-Zero-To-Hero/assets/100069489/d69ad4a8-5095-4bb7-950a-6893022e4009)
 
+### To run multi stage multi agent pipeline
+
+Im using same Jenkins job and i change the scripted path in Jenkins job.
+
+![image](https://github.com/kohlidevops/Jenkins-Zero-To-Hero/assets/100069489/16425769-aa90-4062-b100-2d36c2256ac5)
+
+Then save and run the build.
 
 
 
