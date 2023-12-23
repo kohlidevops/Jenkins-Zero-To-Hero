@@ -1,0 +1,27 @@
+pipeline {
+  agent {
+    docker { image 'subr/php-apache-ubuntu' }
+  }
+  stages {
+    stage('Ubuntu OS Version') {
+      steps {
+        sh 'uname -a'
+      }
+    }
+    stage('Apache Webserver Version') {
+      steps {
+        sh 'apache2 -v'
+      }
+    }
+    stage('MySQL Version') {
+      steps {
+        sh 'mysql --version'
+      }
+    }
+    stage('PHP Version') {
+      steps {
+        sh 'php -v'
+      }
+    }
+  }
+}
