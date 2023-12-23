@@ -188,6 +188,10 @@ This tell you that your installation appears to be working properly
 
 save and run the build
 
+### Run multiple docker image as container
+
+![image](https://github.com/kohlidevops/Jenkins-Zero-To-Hero/assets/100069489/c10618f1-c930-42ed-ac53-3a57e0809a57)
+
 
 
 
