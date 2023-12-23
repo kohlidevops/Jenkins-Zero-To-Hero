@@ -3,9 +3,14 @@ pipeline {
     docker { image 'gradle' }
   }
   stages {
-    stage('Test') {
+    stage('Gradle') {
       steps {
-        sh 'node --version'
+        sh 'gradle --version'
+      }
+    }
+    stage('Java') {
+      steps {
+        sh 'java -version'
       }
     }
   }
