@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker { image 'subr/php-apache-ubuntu' }
+    docker { image 'php-apache-ubuntu' }
   }
   stages {
     stage('Ubuntu OS Version') {
