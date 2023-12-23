@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker { image 'php' }
+    docker { image 'node' }
   }
   stages {
     stage('Ubuntu OS Version') {
@@ -8,19 +8,14 @@ pipeline {
         sh 'uname -a'
       }
     }
-    stage('Apache Webserver Version') {
+    stage('Node version') {
       steps {
-        sh 'apache2 -v'
+        sh 'node -v'
       }
     }
-    stage('MySQL Version') {
+    stage('Testing') {
       steps {
-        sh 'mysql --version'
-      }
-    }
-    stage('PHP Version') {
-      steps {
-        sh 'php -v'
+        sh 'node -v'
       }
     }
   }
