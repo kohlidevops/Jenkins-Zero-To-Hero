@@ -1,3 +1,10 @@
+# What is Jenkins?
+
+1. Jenkins is a free tool that helps software developers work faster and more efficiently. It takes care of repetitive tasks like building, testing, and delivering code.
+2. It keeps an eye on code changes and automatically starts the necessary processes.
+3.It supports a wide range of plugins, allowing seamless integration with various tools and technologies
+4. By using Jenkins, developers can save time, work together smoothly, and make sure their software works correctly before releasing it to users.
+
 ## AWS EC2 Instance
 
 - Go to AWS Console
@@ -78,9 +85,36 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 
 <img width="990" alt="Screenshot 2023-02-01 at 11 14 13 AM" src="https://user-images.githubusercontent.com/43399466/215961440-3f13f82b-61a2-4117-88bc-0da265a67fa7.png">
 
+## Jenkins Master Slave Architecture
+
+1. Jenkins master-slave architecture is a way to distribute workloads in Jenkins.
+2. In simple terms, it’s like having a boss (master node) and assistants (slave nodes) in a company.
+3. The boss manages and coordinates tasks, while the assistants handle the actual work.
+
+### Benefits
+
+1. It improves performance and scalability.
+2. The workload is divided among multiple machines, allowing tasks to be executed simultaneously.
+3. This speeds up the overall process and enables handling larger workloads.
+4. If the master node fails, the slave nodes can continue working independently. This ensures that the development and deployment processes are not disrupted.
+5. Different slave nodes can be configured with specific software, hardware, or operating systems to handle specific tasks.
+
 ## Jenkins Architecture - Difference between Worker node as slave and docker container as slave
 
 ![image](https://github.com/kohlidevops/Jenkins-Zero-To-Hero/assets/100069489/9029dab5-55b2-4bbb-9aad-3ceabbf56f6a)
+
+### Permanent Slaves
+
+1. A permanent slave in Jenkins master-slave architecture is a dedicated machine that is always available to perform tasks assigned by the master node.
+2. Permanent slaves have fixed resources and are useful for consistent workloads or when specific hardware or software configurations are required.
+3. They are just like VM running on your HostOS, which consumes a lot of physical resources.
+
+### Dynamic Slaves
+
+1. Dynamic slaves are more like on-demand assistants.
+2. They are created when needed and released when the work is done.
+3. Dynamic slaves can be provisioned on different machines, including virtual machines or containers, depending on the workload.
+4. They provide flexibility and adaptability to handle varying workloads.
 
 ### Challenges with Worker node as Slave
 
@@ -91,11 +125,10 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 
 ### Advantages of using docker container as Slave
 
-1. No need separate VM means no idle machine
-2. Can use multiple docker container to resolve version problem
-3. Light weight process
-4. Container will be terminated once its completed the job
-5. This is the latest technology in CICD
+1. When there are no pending tasks, the resources are freed up, allowing other jobs or tasks to utilize them.
+2. Dynamic slaves enable scaling. If the workload increases, more slaves can be provisioned to handle the additional tasks.
+3. Once the workload decreases, the extra slaves can be terminated, saving resources and costs.
+4. Dynamic slaves support parallel execution. Multiple tasks can run concurrently on different slave nodes, significantly reducing the overall execution time
    
 ## Install the Docker Pipeline plugin in Jenkins:
 
