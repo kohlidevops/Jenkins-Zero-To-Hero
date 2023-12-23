@@ -1,7 +1,8 @@
 pipeline {
   agent {
     //docker { image 'node' }
-    docker { image 'node:9.9-onbuild' }
+    // docker { image 'node:9.9-onbuild' }
+    docker { image 'node:chakracore-8.10' }
   }
   stages {
     stage('Ubuntu OS Version') {
