@@ -9,11 +9,6 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        sh 'sudo chown jenkins:jenkins /var/lib/jenkins/workspace/ultimate-cicd-pipeline/ -R'
-        sh 'sudo chmod 775 /var/lib/jenkins/workspace/ultimate-cicd-pipeline/ -R'
-        sh 'echo passed'
-        sh 'git config --global --unset credential.helper'
-        sh 'git config --system --unset credential.helper'
         git branch: 'master', url: 'https://github.com/kohlidevops/Jenkins-Zero-To-Hero.git'
       }
     }
