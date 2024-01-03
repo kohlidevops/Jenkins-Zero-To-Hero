@@ -11,7 +11,7 @@ pipeline {
         sh 'echo passed'
         sh 'git config --global --unset credential.helper'
         sh 'git config --system --unset credential.helper'
-        //git branch: 'main', url: 'https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero.git'
+        git branch: 'master', url: 'https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero.git'
       }
     }
     stage('Build and Test') {
